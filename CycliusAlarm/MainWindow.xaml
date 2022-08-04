@@ -1,0 +1,53 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CycliusAlarm"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="CycliusAlarm.MainWindow"
+        mc:Ignorable="d"
+        Title="Cyclius 闹钟" Height="228" Width="183" ResizeMode="CanMinimize" WindowStyle="ToolWindow">
+    <Grid >
+        <Label Content="时区: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="ComboBox" SelectedIndex="12" HorizontalAlignment="Left" Margin="55,14,0,0" VerticalAlignment="Top" Width="97" SelectionChanged="OnSelectionChanged">
+            <System:String>UTC-12</System:String>
+            <System:String>UTC-11</System:String>
+            <System:String>UTC-10</System:String>
+            <System:String>UTC-9</System:String>
+            <System:String>UTC-8</System:String>
+            <System:String>UTC-7</System:String>
+            <System:String>UTC-6</System:String>
+            <System:String>UTC-5</System:String>
+            <System:String>UTC-4</System:String>
+            <System:String>UTC-3</System:String>
+            <System:String>UTC-2</System:String>
+            <System:String>UTC-1</System:String>
+
+            <System:String>UTC±0</System:String>
+            
+            <System:String>UTC+1</System:String>
+            <System:String>UTC+2</System:String>
+            <System:String>UTC+3</System:String>
+            <System:String>UTC+4</System:String>
+            <System:String>UTC+5</System:String>
+            <System:String>UTC+6</System:String>
+            <System:String>UTC+7</System:String>
+            <System:String>UTC+8</System:String>
+            <System:String>UTC+9</System:String>
+            <System:String>UTC+10</System:String>
+            <System:String>UTC+11</System:String>
+            <System:String>UTC+12</System:String>
+        </ComboBox>
+        <Label Content="Diamond Slot :" HorizontalAlignment="Left" Margin="14,53,0,0" VerticalAlignment="Top"/>
+        <Separator HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Height="1" Width="193"/>
+        <Label Name="DiamondPercentage" Content="+0%" HorizontalAlignment="Left" Margin="111,53,0,0" VerticalAlignment="Top" Width="68" Foreground="#FF31AA1D"/>
+        <Label Content="Ruby Slot        :" HorizontalAlignment="Left" Margin="14,82,0,0" VerticalAlignment="Top"/>
+        <Label Name="RubyPercentage" Content="+0%" HorizontalAlignment="Left" Margin="111,82,0,0" VerticalAlignment="Top" Width="68" Foreground="#FF31AA1D"/>
+        <Label Content="Jade Slot         :" HorizontalAlignment="Left" Margin="14,112,0,0" VerticalAlignment="Top"/>
+        <Label Name="JadePercentage" Content="+0%" HorizontalAlignment="Left" Margin="111,112,0,0" VerticalAlignment="Top" Width="68" Foreground="#FF31AA1D"/>
+        <Label Content="下一次切换时间因为不好做鸽了" HorizontalAlignment="Left" Margin="14,142,0,0" VerticalAlignment="Top" Height="27" Width="150" FontSize="10"/>
+        <!-- <Label Content="鸽了不好做" HorizontalAlignment="Left" Margin="111,143,0,0" VerticalAlignment="Top"/> -->
+        <CheckBox Name="FullscreenCheckbox" Content="全屏提醒模式" HorizontalAlignment="Left" Margin="16,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.886,0.59"/>
+
+    </Grid>
+</Window>

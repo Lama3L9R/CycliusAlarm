@@ -1,0 +1,14 @@
+﻿<Window x:Class="CycliusAlarm.Alarm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Title="Alarm" Height="186" Width="277" WindowState="Maximized" WindowStyle="None" Background="#00000000" Loaded="Window_Loaded">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Background="White" Height="92" Width="199">
+        <Button Content="好的" Margin="47,61,54,9" Click="OnButtonClick"/>
+        <Label Content="请将Cyclius槽位切换到" Margin="8,17,54,50"/>
+        <Label x:Name="slotName" Content="Diamond" HorizontalAlignment="Left" Margin="137,17,0,0" VerticalAlignment="Top" Foreground="#FF098956" RenderTransformOrigin="0.816,0.574"/>
+    </Grid>
+</Window>
